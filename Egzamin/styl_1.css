@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+body{
+    background-color: #F6E5DC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.baner{
+    background-color: #2F180C;
+    align-content: center;
+    color: khaki;
+    min-height: 60px;
+}
+
+.flex-main{
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    width: 60%;
+}
+
+.right{
+    font-size: 150%;
+    padding: 70px;
+    width: 40%;
+}
+
+.bottom {
+    background-color: #D0B6A8;
+    align-content: center;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer{
+    background-color: #2F180C;
+    color: khaki;
+    min-height: 60px;
+}
+
+.image{
+    height: 350px;
+}
+
+.btns{
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F180C;
+    color: khaki;
+}
