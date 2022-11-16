@@ -43,7 +43,7 @@
             $person = $_POST['person'];
             $phone = $_POST['phone'];
 
-            $sql = "INSERT INTO rezerwacje (id, nr_stolika, data_rez, liczba_osob, telefon) VALUES("NULL", "NULL", "$date", "$person", "$phone" )";
+            $sql = "INSERT INTO rezerwacje (nr_stolika, data_rez, liczba_osob, telefon) VALUES(NULL, '$date', '$person', '$phone' )";
 
             try{
                 $conn = new PDO("mysql:host=localhost; dbname=baza", "root", "");
@@ -51,10 +51,11 @@
             }
 
             catch(PDOException $e){
-                echo "Connected failed: " .$e ->getMessage();
+                echo "Connected failed: " .$e->getMessage();
             }
 
-            $query = $conn -> prepare($sql);
+
+            $query = $conn->exec($sql);
 
             if($query == true)
             echo "<div class="."alarm"."><p>Dodano rezerwacje do bazy</p></div>";
